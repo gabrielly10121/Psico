@@ -1,0 +1,846 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+header {
+    background-color: #D57A66;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
+nav .menu-icon {
+    display: none; /* Esconde o botão de hambúrguer por padrão (para telas grandes) */
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    z-index: 2; /* Garante que o ícone do menu esteja acima do conteúdo */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #D57A66;
+}
+
+nav .logo img {
+    height: 150px;
+    width: 200px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    flex-grow: 1;
+    justify-content: space-evenly;
+
+}
+
+
+
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #843D33;
+}
+
+.social-media {
+    display: flex; /* Exibe os ícones das redes sociais em linha */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    margin-top: 20px; /* Adiciona uma margem superior para afastar um pouco do conteúdo acima */
+}
+
+nav .social-media {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+nav .social-media a {
+    margin-left: 15px;
+}
+
+nav .social-media i {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease;
+}
+
+nav .social-media i:hover {
+    color: #843D33;
+}
+
+
+section {
+    padding: 80px 20px;
+}
+
+
+#home {
+    background-color: #DFDFDF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+
+#home .content {
+    max-width: 50%;
+    margin-bottom: 30px;
+}
+
+#home .content h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+#home .content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#home .content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#home .whatsapp-btn-container {
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+#home .whatsapp-btn {
+    background-color: #843D33;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#home .whatsapp-btn:hover {
+    background-color: #6F2C1F;
+}
+
+#home .image img {
+    border-radius: 111vh;
+    width: 100%;
+    max-width: 400px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+
+#sobre-mim {
+    background-color: #D57A66;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+#sobre-mim .image img {
+    border-radius: 100px;
+    width: 100%;
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+#sobre-mim .text {
+    max-width: 50%;
+}
+
+#sobre-mim .text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#sobre-mim .text p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: -15px;
+}
+
+#sobre-mim .whatsapp-btn {
+    background-color: #843D33;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#sobre-mim .whatsapp-btn:hover {
+    background-color: #6F2C1F;
+}
+
+#sobre-mim .whatsapp-btn-container {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+#abordagem {
+    background-color: #DFDFDF;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+#abordagem .content {
+    max-width: 70%;
+}
+
+#abordagem ul {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#abordagem h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#abordagem p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+#faq {
+    background-color: #D57A66;
+    padding: 40px 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-btn {
+    background-color: #843D33;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #f2f2f2;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#faq h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+
+#contato {
+    background-color: #DFDFDF;
+    padding: 40px 20px;
+}
+
+#contato h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.contact-item i {
+    font-size: 40px;
+    margin-right: 15px;
+    color: black;
+}
+
+.contact-item p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.contact-item img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.contact-item.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.contact-item .logo-img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.contact-item a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    opacity: 0.7;
+}
+
+.extra-image-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.extra-image-container img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Ajustes para telas menores (máx. 414px) */
+@media (max-width: 414px) {
+    /* Menu */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        position: absolute; /* Posiciona o menu de forma absoluta */
+        top: 60px; /* Deixa um espaço do topo */
+        right: 0;
+        width: 100%;
+        background-color: #D57A66;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: none; /* Menu oculto por padrão */
+    }
+
+    nav ul.active {
+        display: flex; /* Exibe o menu quando a classe 'active' for adicionada */
+    }
+
+    /* Ajusta os ícones das redes sociais */
+    .social-media {
+        display: flex;
+        justify-content: center; /* Centraliza os ícones */
+        align-items: center;
+        width: 100%; /* Garante que ocupe toda a largura */
+        margin-top: 20px; /* Espaço entre o menu e os ícones */
+        z-index: 1; /* Garantir que os ícones fiquem acima do menu */
+    }
+
+    .social-media a {
+        margin: 0 10px; /* Adiciona um pequeno espaço entre os ícones */
+    }
+
+    /* Botão de hambúrguer */
+    .menu-icon {
+        display: block;
+        position: absolute; /* Coloca o ícone no canto superior direito */
+        top: 15px;
+        right: 15px;
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: #333;
+        cursor: pointer;
+        z-index: 2; /* Garante que o ícone de hambúrguer fique acima dos outros elementos */
+    }
+
+    /* Logo */
+    nav .logo img {
+        height: 40px;
+    }
+
+    /* Outros ajustes do menu */
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+#contato .contact-info {
+    padding-left: 15px; /* Menos margem para telas menores */
+}
+
+#contato h2 {
+    font-size: 24px; /* Tamanho menor para telas pequenas */
+}
+
+#contato .logo-img {
+    width: 40px;
+}
+
+#contato .contact-item {
+    margin-bottom: 10px;
+}
+
+
+
+/* Ajustes para telas de 375px */
+@media (max-width: 375px) {
+    nav ul li {
+        margin-right: 15px;
+    }
+
+    .faq-btn, .whatsapp-btn {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
+
+/* Ajustes para telas de 320px */
+@media (max-width: 320px) {
+    nav ul li {
+        font-size: 14px;
+    }
+
+    .contact-item p {
+        font-size: 14px;
+    }
+
+    #home .content h1 {
+        font-size: 28px;
+    }
+
+    .extra-image-container img {
+        max-width: 400px;
+    }
+}
+
+/* Estilos gerais do menu e ícones de redes sociais */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #D57A66;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+nav ul li {
+    margin-right: 30px;
+    white-space: nowrap;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+nav .social-media i {
+    font-size: 24px;
+    color: black;
+}
+
+
+
+/* Estilo do menu em telas maiores */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #D57A66;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+nav ul li {
+    margin-right: 30px;
+    white-space: nowrap;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+nav .social-media i {
+    font-size: 24px;
+    color: black;
+}
+
+
+
+/* telas pequenas (máx. 768px) */
+@media (max-width: 768px) {
+    
+
+    nav .menu-icon {
+        display: block; /* Exibe o botão de hambúrguer */
+        position: absolute;
+        top: 15px;
+        right: 15px; /* Coloca o botão no canto superior direito */
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: #333;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+
+
+
+    nav {
+        position: relative; 
+    }
+
+    
+    nav ul {
+        display: none; /* Menu escondido por padrão */
+        flex-direction: column; /* Coloca os itens em uma coluna */
+        align-items: center; /* Centraliza os itens */
+        position: absolute; /* Posiciona o menu de forma absoluta */
+        top: 50px; /* Ajusta a posição do menu */
+        right: 0;
+        width: 100%;
+        background-color: #D57A66;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Um sombreado leve */
+        top: 60px;
+    }
+
+    nav ul.active {
+        display: flex; /* Exibe o menu quando a classe 'active' é adicionada */
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav .logo img {
+        height: 40px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+
+   /* Centraliza os ícones das redes sociais */
+   .social-media {
+    width: 100%; /* Garante que a div ocupe toda a largura da tela */
+    display: flex;
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    align-items: center; /* Garante que os ícones fiquem alinhados verticalmente (caso haja mais de uma linha) */
+    margin-top: 20px; /* Adiciona um espaço entre o menu e os ícones */
+}
+
+/* Ajusta os ícones para ficarem de forma organizada */
+.social-media a {
+    margin: 0 10px; /* Adiciona um pequeno espaço entre os ícones */
+}
+}
+
+#contato .contact-info {
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: flex-start; /* Alinha à esquerda */
+    padding-left: 20px; /* Adiciona margem à esquerda */
+    width: 100%;
+}
+
+#contato .contact-item {
+    margin-bottom: 15px; /* Espaço entre os itens */
+    display: flex;
+    align-items: center;
+}
+
+#contato .contact-item a {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+#contato h2 {
+    font-size: 28px; /* Ajuste do tamanho da fonte */
+    margin-left: 20px; /* Espaçamento à esquerda */
+}
+
+#contato .logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#contato .logo-img {
+    width: 50px; /* Ajuste o tamanho da logo */
+    margin-right: 10px;
+}
+
+
+
+    /* Ícone do menu - Apenas em telas pequenas */
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-icon i {
+        font-size: 30px;
+        color: white;
+    }
+
+    /* Exibe o menu quando o ícone for clicado */
+    nav.open ul {
+        display: flex; 
+    }
+
+
+/* Esconde o ícone do menu em telas grandes */
+@media (min-width: 769px) {
+    .menu-icon {
+        display: none; 
+    }
+
+    nav ul {
+        display: flex; 
+    }
+}
+
+
+#abordagem {
+    flex-direction: column;
+    align-items: center;
+}
+
+#abordagem .content {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* centralizar a imagem  em telas pequenas (celular e tablets) */
+@media (max-width: 1024px) {
+    #abordagem {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    #abordagem .content {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    
+
+    
+}
+
+/* Para telas muito pequenas (máx. 414px) */
+@media (max-width: 414px) {
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .faq-btn, .whatsapp-btn {
+        font-size: 14px;
+        padding: 12px 25px;
+    }
+
+    .contact-item img {
+        width: 30px;
+    }
+
+    .extra-image-container img {
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    #home,
+    #sobre-mim {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #home .content,
+    #sobre-mim .text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #home .image,
+    #sobre-mim .image {
+        order: -1; 
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    #home .image img,
+    #sobre-mim .image img {
+        width: 100%;
+        max-width: 400px; 
+        height: auto;
+        object-fit: contain; 
+    }
+
+    
+}
+
+
+@media (max-width: 768px) {
+    #redes-sociais {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #redes-sociais a {
+        margin-bottom: 10px; 
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
