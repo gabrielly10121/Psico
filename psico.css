@@ -376,6 +376,11 @@ footer p {
     font-weight: 300;
 }
 
+
+
+
+
+
 html, body {
     margin: 0;
     padding: 0;
@@ -607,11 +612,35 @@ nav .social-media i {
     }
 }
 
+/* Centralizar a imagem e conteúdo de abordagem em telas grandes */
+@media (min-width: 1025px) {
+    #abordagem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 1200px;
+        margin: 0 auto; 
+        background-color: #fdfdfd; 
+        padding: 40px 20px; 
+        width: 100%; 
+    }
+
+    #abordagem .content {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
 /* Centralizar a imagem em telas pequenas (celular e tablets) */
 @media (max-width: 1024px) {
     #abordagem {
         flex-direction: column;
         align-items: center;
+        background-color: #ffffff; 
+        padding: 40px 20px; 
+        width: 100%; 
     }
 
     #abordagem .content {
@@ -642,6 +671,44 @@ nav .social-media i {
 
     .social-media a[href*="wa.me"] {
         display: none;
+    }
+
+    /* Garantir que os itens de contato fiquem empilhados */
+    #contato .contact-info {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding-left: 15px;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    #contato h2 {
+        font-size: 24px;
+    }
+
+    #contato .logo-img {
+        width: 40px;
+    }
+
+    #contato {
+        display: block;
+    }
+
+    #contato .contact-item {
+        margin-bottom: 10px;
+        display: block; 
+        text-align: left;
+        width: 100%;
+    }
+
+    .faq-btn, .whatsapp-btn {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .contact-item p {
+        font-size: 14px;
     }
 }
 
@@ -688,6 +755,8 @@ nav .social-media i {
         font-size: 16px;
     }
 }
+
+
 
 
 
